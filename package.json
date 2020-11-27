@@ -1,0 +1,69 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "A lottery demo written in Javascript.",
+  "author": "Duoani <duoani@126.com>",
+  "keywords": [],
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm-run-all -p dev",
+    "dev": "cross-env NODE_ENV=development  webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "build": "cross-env NODE_ENV=production node build/build.js",
+    "lint": "eslint --fix --ext .js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.4",
+    "core-js": "^3.4.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-syntax-jsx": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "autoprefixer": "^10.0.1",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "4.5.2",
+    "cross-env": "^5.2.1",
+    "css-loader": "^4.3.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "4.0.1",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "hash-sum": "1.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.5",
+    "optimize-css-assets-webpack-plugin": "5.0.0",
+    "postcss": "^8.1.0",
+    "postcss-import": "11.1.0",
+    "postcss-loader": "^4.0.2",
+    "postcss-scss": "^3.0.2",
+    "postcss-url": "^8.0.0",
+    "sass-loader": "^10.0.2",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "1.2.7",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  }
+}
